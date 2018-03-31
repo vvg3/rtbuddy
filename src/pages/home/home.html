@@ -1,14 +1,39 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>RTB</ion-title>
+          <ion-buttons end icon-only>
+            <button ion-button (click)="toAbout()">
+              <ion-icon name="information-circle"></ion-icon>
+            </button>
+          </ion-buttons>
+      
+        </ion-toolbar>
+      </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+    Welcome to Road Trip Buddy!
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    We can use your current location, or you can search below:
+  </p>
+  <p>
+    <ion-list>
+
+      <ion-item>
+        <ion-label fixed>City</ion-label>
+        <ion-input type="city" value=""></ion-input>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label fixed>State</ion-label>
+        <ion-input type="state"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label fixed>Zip</ion-label>
+        <ion-input type="zip"></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button block (click)="toLocation()">Search Location</button>
   </p>
 </ion-content>
