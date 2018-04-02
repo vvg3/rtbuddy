@@ -1,9 +1,69 @@
 <ion-header>
-    <ion-navbar>
-        <ion-title>Profile</ion-title>
-    </ion-navbar>
+    <ion-toolbar color="primary">
+        <ion-title>the stats</ion-title>
+        <ion-buttons end icon-only>
+            <button ion-button (click)="toAbout()">
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+
+    </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-    this is profile
+    <div>
+        <ion-list>
+            <ion-card>
+                <ion-card-header>
+                    Population
+                </ion-card-header>
+                <ion-card-content>
+                    Total: 82,795
+                </ion-card-content>
+                <ion-card-content>
+                    Density: 10,559/sq. mi.
+                </ion-card-content>
+            </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Area
+                </ion-card-header>
+                <ion-card-content>
+                    Total: 7.83 square miles
+                </ion-card-content>
+                <ion-card-content>
+                    Land: 7.83 square miles
+                </ion-card-content>
+                <ion-card-content>
+                    Water: 0 square miles
+                </ion-card-content>
+            </ion-card>
+        </ion-list>
+    </div>
+    <div>
+        <h3 padding>Trends</h3>
+    </div>
+    <ion-content class="card-background-page">
+        <ion-list>
+            <ion-card>
+                <img src="https://imgcp.aacdn.jp/img-a/1720/auto/global-aaj-front/article/2017/05/59240064682c4_5924001331ee1_801124285.jpg"
+                />
+                <div class="card-title">Nightlife</div>
+                <div class="card-subtitle">Score: 79.99 (DJ's, drinks)</div>
+            </ion-card>
+
+            <ion-card>
+                <img src="https://images.fineartamerica.com/images-medium-large-5/diversity-paint-brushes-horizontal-don-mcgillis.jpg" />
+                <div class="card-title">Artsy</div>
+                <div class="card-subtitle">Score: 76.51 (paintings, street art)</div>
+            </ion-card>
+
+            <ion-card>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFj_D1AAk9PTiP9jiDtpdpuQiogyJECm3DHrbWBonhxICH8rP3" />
+                <div class="card-title">Healthy</div>
+                <div class="card-subtitle">Score: 73.66 (exercise, yoga)</div>
+            </ion-card>
+        </ion-list>
+    </ion-content>
 </ion-content>

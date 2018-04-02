@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { AboutPage } from '../about/about';
+
 
 /**
  * Generated class for the AboutPage page.
@@ -24,6 +26,10 @@ export class ProfilePage {
 
   goBack() {
     this.navCtrl.pop();
+  }
+
+  toAbout() {
+    this.navCtrl.push(AboutPage);
   }
 
 

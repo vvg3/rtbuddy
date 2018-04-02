@@ -1,9 +1,60 @@
 <ion-header>
-    <ion-navbar>
-        <ion-title>People</ion-title>
-    </ion-navbar>
+    <ion-toolbar color="primary">
+        <ion-title>the people</ion-title>
+        <ion-buttons end icon-only>
+            <button ion-button (click)="toAbout()">
+                <ion-icon name="information-circle"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    this is people
+<ion-content padding>
+    <ion-list>
+        <ion-card>
+            <img src="http://wp.production.patheos.com/blogs/eidos/files/2015/08/peterpan.jpg" />
+            <ion-card-content>
+                <ion-card-title>
+                    Peter Pan
+                </ion-card-title>
+                <p>
+                    boy who never grew up
+                </p>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <img src="https://marriedbiography.com/wp-content/uploads/2017/08/Tina-Fey.jpg" />
+            <ion-card-content>
+                <ion-card-title>
+                    Tina Fey
+                </ion-card-title>
+                <p>
+                    comedian, writer and actress
+                </p>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Elvis_Presley_Publicity_Photo_for_The_Trouble_with_Girls_1968.jpg/220px-Elvis_Presley_Publicity_Photo_for_The_Trouble_with_Girls_1968.jpg"
+            />
+            <ion-card-content>
+                <ion-card-title>
+                    Elvis Presley
+                </ion-card-title>
+                <p>
+                    singer, actor and hound dog
+                </p>
+            </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Domestic_goat_kid_in_capeweed.jpg/1200px-Domestic_goat_kid_in_capeweed.jpg"
+            />
+            <ion-card-content>
+                <ion-card-title>
+                    Michael Jordan
+                </ion-card-title>
+                <p>Former Minor league baseball player and</p>
+                <p>current owner of an unsuccessful NBA franchise</p>
+            </ion-card-content>
+        </ion-card>
+    </ion-list>
 </ion-content>
