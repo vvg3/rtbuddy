@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AboutPage } from '../about/about';
-import { LocationPage } from '../location/location';
+// import { LocationPage } from '../location/location';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -19,7 +20,7 @@ export class HomePage {
   }
 
   toLocation(){
-    this.navCtrl.push(LocationPage);
+    this.navCtrl.push(TabsPage);
   }
 
 

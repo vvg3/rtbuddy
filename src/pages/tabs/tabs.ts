@@ -4,6 +4,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PeoplePage } from '../people/people';
 import { PostsPage } from '../posts/posts';
 import { ProfilePage } from '../profile/profile';
+
 /**
  * Generated class for the TabsPage page.
  *
@@ -17,16 +18,18 @@ import { ProfilePage } from '../profile/profile';
   templateUrl: 'tabs.html',
 })
 export class TabsPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
+  
   tab1Root: any = PeoplePage;
   tab2Root: any = PostsPage;
   tab3Root: any = ProfilePage;
 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad TabsPage');
   }
+
+
 
 }

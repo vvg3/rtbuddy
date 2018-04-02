@@ -9,5 +9,8 @@ import { PeoplePage } from './people';
   imports: [
     IonicPageModule.forChild(PeoplePage),
   ],
+  exports: [
+    PeoplePage
+  ]
 })
 export class PeoplePageModule {}
