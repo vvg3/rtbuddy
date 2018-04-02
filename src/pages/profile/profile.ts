@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AboutPage } from '../about/about';
+import { HomePage } from '../home/home';
 
 
 /**
@@ -30,6 +31,10 @@ export class ProfilePage {
 
   toAbout() {
     this.navCtrl.push(AboutPage);
+  }
+
+  toSearch() {
+    this.navCtrl.push(HomePage);
   }
 
 

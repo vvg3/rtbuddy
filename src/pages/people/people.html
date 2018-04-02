@@ -1,6 +1,11 @@
 <ion-header>
     <ion-toolbar color="primary">
         <ion-title>the people</ion-title>
+        <ion-buttons start icon-only>
+            <button ion-button (click)="toSearch()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
         <ion-buttons end icon-only>
             <button ion-button (click)="toAbout()">
                 <ion-icon name="information-circle"></ion-icon>

@@ -1,15 +1,18 @@
 <ion-header>
     <ion-toolbar color="primary">
         <ion-title>the stats</ion-title>
+        <ion-buttons start icon-only>
+            <button ion-button (click)="toSearch()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
         <ion-buttons end icon-only>
             <button ion-button (click)="toAbout()">
                 <ion-icon name="information-circle"></ion-icon>
             </button>
         </ion-buttons>
-
     </ion-toolbar>
 </ion-header>
-
 
 <ion-content>
     <div>

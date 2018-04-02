@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AboutPage } from '../about/about';
-
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the AboutPage page.
@@ -32,5 +32,8 @@ export class PeoplePage {
     this.navCtrl.push(AboutPage);
   }
 
+  toSearch() {
+    this.navCtrl.push(HomePage);
+  }
 
 }
