@@ -18,5 +18,4 @@ export class MyApp {
       splashScreen.hide();
     });
   }
-}
-
+}9

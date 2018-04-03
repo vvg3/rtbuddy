@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { PeoplePage } from '../pages/people/people';
 import { PostsPage } from '../pages/posts/posts';
 import { ProfilePage } from '../pages/profile/profile';
+import { RtbProvider } from '../providers/rtb/rtb';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ProfilePage } from '../pages/profile/profile';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RtbProvider,
   ]
 })
 export class AppModule {}
