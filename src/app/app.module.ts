@@ -8,11 +8,11 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { TabsPage } from '../pages/tabs/tabs';
-// import { LocationPage } from '../pages/location/location';
 import { PeoplePage } from '../pages/people/people';
 import { PostsPage } from '../pages/posts/posts';
 import { ProfilePage } from '../pages/profile/profile';
 import { RtbProvider } from '../providers/rtb/rtb';
+import { CustomHttpService } from '../providers/custom-http-service/custom-http-service';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,6 @@ import { RtbProvider } from '../providers/rtb/rtb';
     HomePage,
     AboutPage,
     TabsPage,
-    // LocationPage,
     PeoplePage,
     PostsPage,
     ProfilePage
@@ -35,7 +34,6 @@ import { RtbProvider } from '../providers/rtb/rtb';
     HomePage,
     AboutPage,
     TabsPage,
-    // LocationPage,
     PeoplePage,
     PostsPage,
     ProfilePage
@@ -45,6 +43,7 @@ import { RtbProvider } from '../providers/rtb/rtb';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     RtbProvider,
+    CustomHttpService,
   ]
 })
 export class AppModule {}
