@@ -78,5 +78,4 @@ describe('CustomHttpService', () => {
 
         httpMock.verify();
     });
-
 });
